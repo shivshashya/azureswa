@@ -1,6 +1,11 @@
 {
-  "navigationFallback": { "rewrite": "/index.html" },
-  "responseOverrides": {
-    "404": { "rewrite": "/index.html" }
+  "routes": [
+    {
+      "route": "/dashboard",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
   }
 }
